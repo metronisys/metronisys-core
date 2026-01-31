@@ -6,6 +6,10 @@ Metronisys core assets
 Commercial use of the name requires permission. 
 Open-source repos may be used freely under their respective licenses.
 
+## Metronisys Core
+
+Autonomous AI agents such as Clawdbot (now Moltbot) represent a major shift in how software operates. These agents can execute commands, automate workflows, and act independently in real-world systems.
+
 - 📜 [Metronisys™ Core Overview](./metronisys-core.md)
 
 ## Features
