@@ -10,6 +10,12 @@ Open-source repos may be used freely under their respective licenses.
 
 Autonomous AI agents such as Clawdbot (now Moltbot) represent a major shift in how software operates. These agents can execute commands, automate workflows, and act independently in real-world systems.
 
+With this power comes a fundamental question:
+
+If AI agents can act autonomously — who governs their behavior in the best interest of the human?
+
+Metronisys™ provides the answer:
+
 - 📜 [Metronisys™ Core Overview](./metronisys-core.md)
 
 ## Features
