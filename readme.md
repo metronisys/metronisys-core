@@ -18,6 +18,12 @@ Metronisys™ provides the answer:
 
 - 📜 [Metronisys™ Core Overview](./metronisys-core.md)
 
+## Trademark - Naming
+
+- 📜 [Metronisys™ Trademark (./trademark.md)
+
+- 📜 [Metronisys™ Naming Policy (./naming-policy.md)
+
 ## Features
 - TBA
 
