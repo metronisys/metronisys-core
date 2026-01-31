@@ -20,9 +20,9 @@ Metronisys™ provides the answer:
 
 ## Trademark - Naming
 
-- 📜 [Metronisys™ Trademark (./trademark.md)
+- 📜 [Metronisys™ Trademark](./trademark.md)
 
-- 📜 [Metronisys™ Naming Policy (./naming-policy.md)
+- 📜 [Metronisys™ Naming Policy](./naming-policy.md)
 
 ## Features
 - TBA
