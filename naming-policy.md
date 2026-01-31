@@ -14,8 +14,3 @@ Not permitted:
 - "Metronisys-certified" (unless certified)
 - "Official Metronisys agent"
 - "Metronisys Pro" or similar
-
-This matters later for:
-Certification
-Enforcement
-Enterprise trust
