@@ -6,6 +6,8 @@ Metronisys core assets
 Commercial use of the name requires permission. 
 Open-source repos may be used freely under their respective licenses.
 
+- 📜 [Metronisys™ Core Overview](./metronisys-core.md)
+
 ## Features
 - TBA
 
