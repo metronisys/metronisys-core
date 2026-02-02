@@ -1,8 +1,10 @@
 class DecisionBoundary:
     """
-    Determines when human intervention is required.
+    Manifesto Reference:
+    Principle 1 — Human authority over autonomous systems
+    (see metronisys-manifesto/principles.md)
     """
-
+    
     def is_autonomy_allowed(self, task: dict) -> bool:
         return task.get("requires_human", False) is False
 
