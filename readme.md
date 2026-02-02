@@ -10,7 +10,7 @@ Open-source repositories may be used freely under their respective licenses.
 
 ## Metronisys Core
 
-Autonomous AI agents such as Clawdbot (now Moltbot) represent a major shift in how software operates. These agents can execute commands, automate workflows, and act independently in real-world systems.
+Autonomous AI agents such as UiPath or Clawdbot (now Moltbot) represent a major shift in how software operates. These agents can execute commands, automate workflows, and act independently in real-world systems.
 
 With this power comes a fundamental question:
 
