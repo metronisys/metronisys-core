@@ -4,6 +4,10 @@ class GovernanceEngine:
     """
     Enforces Metronisys governance rules.
     Policies are defined externally (YAML/JSON).
+    Manifesto Compliance:
+    - Prevents unbounded autonomy
+    - Enforces explicit risk thresholds
+    - Rejects tasks outside allowed domains
     """
 
     def __init__(self, policies: dict):
