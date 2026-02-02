@@ -1,0 +1,10 @@
+max_risk_level: 3
+
+allowed_domains:
+  - productivity
+  - wellbeing
+  - education
+
+requires_human_review:
+  - medical
+  - legal
