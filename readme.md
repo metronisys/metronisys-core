@@ -44,12 +44,12 @@ Metronisys Core is designed as a **governance-first orchestration layer** that s
 It does **not** replace agents.  
 It governs *how far* agents may act.
 
-[ Human Authority ] 
-↑
-[ Metronisys Core ] 
-↑
-[ Autonomous Agents ] 
-↑
+[ Human Authority ]
+        ↑
+[ Metronisys Core ]
+        ↑
+[ Autonomous Agents ]
+        ↑
 [ Tools • APIs • Systems ]
 
 ---
