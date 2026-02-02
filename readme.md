@@ -1,6 +1,6 @@
 # Metronisys-Core – Metronisys™
 
-Metronisys core assets
+Metronisys core governance assets
 
 **Metronisys™** is a trademark of John A. Nudd.  
 Commercial use of the name requires permission.  
@@ -8,11 +8,12 @@ Open-source repositories may be used freely under their respective licenses.
 
 ---
 
-## Metronisys Core
+## What Is Metronisys Core?
 
-Autonomous AI agents such as UiPath or Clawdbot (now Moltbot) represent a major shift in how software operates. These agents can execute commands, automate workflows, and act independently in real-world systems.
+Autonomous AI agents such as UiPath agents or Clawdbot (now Moltbot) represent a fundamental shift in how software operates.  
+These agents can execute commands, automate workflows, call tools, and act independently in real-world systems.
 
-With this power comes a fundamental question:
+With this power comes a critical question:
 
 > **If AI agents can act autonomously — who governs their behavior in the best interest of the human?**
 
@@ -20,94 +21,110 @@ With this power comes a fundamental question:
 
 ---
 
+## Relationship to the Metronisys Manifesto
+
+The **Metronisys Manifesto** defines *why* AI autonomy must be governed.  
+**Metronisys Core** defines *how* those principles are enforced in real systems.
+
+| Manifesto Principle | Core Enforcement Mechanism |
+|--------------------|---------------------------|
+| Human authority over automation | Human-in-the-loop escalation |
+| Bounded autonomy | Resource & cost guardrails |
+| Transparency over power | Tool & MCP call auditing |
+| Accountability across systems | Cross-agent delegation integrity |
+
+This repository translates philosophy into enforceable system boundaries.
+
+---
+
 ## Architecture Overview
 
 Metronisys Core is designed as a **governance-first orchestration layer** that sits *between* autonomous agents and the environments they operate in.
 
-Rather than focusing on model performance or task efficiency alone, Metronisys prioritizes:
-- Human agency
-- Ethical constraints
-- Explicit decision boundaries
-- Auditable behavior
+It does **not** replace agents.  
+It governs *how far* agents may act.
 
-### High-Level Architecture
-
-Human Intent │ ▼ ┌──────────────────────┐ │ Decision Boundaries  │  ← Human-in-the-loop controls └──────────────────────┘ │ ▼ ┌──────────────────────┐ │ Governance Engine    │  ← Policy & risk enforcement │ (Policy-as-Code)    │ └──────────────────────┘ │ ▼ ┌──────────────────────┐ │ Orchestration Engine │  ← Agent coordination └──────────────────────┘ │ ▼ ┌──────────────────────┐ │ Autonomous Agents    │  ← LLMs, tools, workflows └──────────────────────┘ │ ▼ Real-World Systems
-
----
-
-## Core Architectural Principles
-
-### 1. Governance Before Execution
-All agent actions are validated **before** execution against explicit, machine-readable policies (e.g. YAML/JSON).
-
-No task executes by default.
+[ Human Authority ] 
+↑
+[ Metronisys Core ] 
+↑
+[ Autonomous Agents ] 
+↑
+[ Tools • APIs • Systems ]
 
 ---
 
-### 2. Explicit Human Decision Boundaries
-Metronisys defines **where autonomy stops**.
+## Core Governance Modules
 
-Tasks that exceed risk thresholds or enter protected domains (e.g. medical, legal, personal wellbeing) require:
-- Human approval
-- Or are blocked entirely
+Each module below maps directly to a Manifesto principle and is documented as an explicit governance capability.
 
-This prevents silent escalation and unbounded autonomy.
+### 1. Human-in-the-Loop Escalation  
+📄 `escalation.md`
 
----
+**Manifesto alignment:**  
+> Autonomy must always remain subordinate to human judgment.
 
-### 3. Agent-Agnostic Orchestration
-Metronisys does **not** assume:
-- A specific LLM provider
-- A specific agent framework
-- A specific runtime environment
-
-Agents are treated as interchangeable actors operating under the same governance constraints.
+Defines when agent execution must pause and request explicit human approval for high-risk actions.
 
 ---
 
-### 4. Policy-as-Code
-Governance rules are externalized into configuration, not hardcoded logic.
+### 2. Resource & Budget Guardrails  
+📄 `budgets.md`
 
-This enables:
-- Auditing
-- Certification
-- Regulatory alignment (e.g. ISO/IEC 42001, EU AI Act)
-- Organizational customization
+**Manifesto alignment:**  
+> Power without limits is not intelligence — it is danger.
 
----
-
-### 5. Auditable Lifecycle
-Each agent task follows a traceable lifecycle:
-1. Intent validation  
-2. Risk & domain assessment  
-3. Execution approval or denial  
-4. Post-execution audit  
-
-This makes accountability explicit and reviewable.
+Defines enforceable boundaries on token usage, cost, execution time, and resource consumption.
 
 ---
 
-## What Metronisys Core Is (and Is Not)
+### 3. Tool & MCP Call Auditing  
+📄 `tool_audit.md`
 
-### ✔ Is
-- A governance and orchestration layer
-- A framework for human-centric AI systems
-- A foundation for certification and compliance
-- A control plane for autonomous agents
+**Manifesto alignment:**  
+> If an action cannot be explained, it cannot be trusted.
 
-### ✖ Is Not
-- An LLM
-- An agent that replaces humans
-- A productivity hack that bypasses safeguards
+Ensures all tool calls and Model Context Protocol (MCP) interactions are observable, auditable, and attributable.
 
 ---
 
-## Learn More
+### 4. Cross-Agent Delegation Integrity  
+📄 `delegation.md`
 
-- 📜 [Metronisys™ Core Overview](./metronisys-core.md)
+**Manifesto alignment:**  
+> Responsibility cannot be delegated away.
+
+Defines how authority, context, and accountability must propagate across multi-agent systems — preventing indirect bypass or collusion.
 
 ---
 
-Metronisys™ exists to ensure that as AI systems gain autonomy, **humans retain authority**.
+## Design Philosophy
+
+Metronisys Core is intentionally:
+
+- **Governance-first**, not feature-first
+- **Vendor-neutral**, not platform-bound
+- **Architecture-driven**, not speculative
+- **Human-aligned**, not agent-optimised
+
+This repository documents *what must exist* for safe autonomy — not how fast it should be shipped.
+
+---
+
+## Status
+
+This repository contains:
+- Governance architecture
+- Enforcement intent
+- Machine-readable policy concepts
+
+It does **not** claim production-ready implementations.
+
+Metronisys Core defines the **minimum conditions** under which autonomous AI systems should be allowed to operate.
+
+---
+
+📜 **Next:**  
+- Read the [Metronisys Manifesto](../metronisys-manifesto)  
+- Explore agent-facing rules in [`agent-governance`](../agent-governance)
 
