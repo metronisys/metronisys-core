@@ -1,6 +1,6 @@
 from metronisys.governance import GovernanceEngine
 from metronisys.decisions import DecisionBoundary
-
+  
 class MetronisysEngine:
     """
     Core orchestration engine.
